@@ -3,7 +3,7 @@
 
 import java.io.*;
 import java.util.*;
-
+// https://practice.geeksforgeeks.org/problems/recursively-remove-all-adjacent-duplicates/0
 public class DeleteAdjacentDuplicate {
     public static void main(String args[]) throws IOException {
         BufferedReader read =

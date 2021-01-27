@@ -3,7 +3,7 @@ import java.math.*;
 import java.text.*;
 import java.util.*;
 import java.util.regex.*;
-
+// https://www.hackerrank.com/challenges/substring-diff/problem
 public class LCSubStringKmismatch {
 
     // Complete the substringDiff function below.

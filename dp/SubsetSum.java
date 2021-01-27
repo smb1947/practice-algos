@@ -1,3 +1,4 @@
+// https://practice.geeksforgeeks.org/problems/subset-sum-problem/0
 public class SubsetSum {
     public int solve(ArrayList<Integer> ar, int sum) {
         int n= ar.size();
@@ -30,5 +31,5 @@ public class SubsetSum {
         return dp[n][sum]?1:0;
     }
 }
-// https://vak1969.com/2020/12/13/a-simple-narration-of-bangalores-history-over-the-last-2000-years/
+
 

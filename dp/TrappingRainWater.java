@@ -4,6 +4,10 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
+// https://www.thealgorists.com/Algo/TrappingRain
+// https://practice.geeksforgeeks.org/problems/trapping-rain-water/0
+// https://www.youtube.com/watch?v=XqTBrQYYUcc&ab_channel=ForAllEpsilon
+
 public class TrappingRainWater {
 
     public static void main(String[] args) {

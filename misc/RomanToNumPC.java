@@ -1,6 +1,6 @@
 // { Driver Code Starts
 // Initial Template for Java
-
+// https://practice.geeksforgeeks.org/problems/roman-number-to-integer/0
 import java.io.*;
 import java.util.*;
 
@@ -34,26 +34,26 @@ class RomanToNumber {
             return symval[sym.indexOf(star[0])];
         
         int val=0;
-        int prev=0, curr=1, prevIndex=-1, currIndex=-1;
+        int prev=0, curr=1, prevSym=-1, currSym=-1;
         while(curr<n){
-            prevIndex=sym.indexOf(star[prev]);
-            currIndex=sym.indexOf(star[curr]);
-            if(prevIndex>=currIndex){
-                val+=symval[prevIndex];
+            prevSym=sym.indexOf(star[prev]);
+            currSym=sym.indexOf(star[curr]);
+            if(prevSym>=currSym){
+                val+=symval[prevSym];
             }
             else{
-                val-=symval[prevIndex]; 
+                val-=symval[prevSym]; 
             }
-            // System.out.print(star[prev]+" "+symval[prevIndex]+" "+val);
-            // System.out.println(" "+prevIndex+" "+currIndex); 
+            // System.out.print(star[prev]+" "+symval[prevSym]+" "+val);
+            // System.out.println(" "+prevSym+" "+currSym); 
             prev++;
             curr++;
         }
-        prevIndex=sym.indexOf(star[prev]);
-        // prevIndex=sym.indexOf(star[prev]);
-        // System.out.print(star[prev]+" "+symval[prevIndex]+" "+val);
-        // System.out.println(" "+prevIndex);
-        val+=symval[prevIndex];
+        prevSym=sym.indexOf(star[prev]);
+        // prevSym=sym.indexOf(star[prev]);
+        // System.out.print(star[prev]+" "+symval[prevSym]+" "+val);
+        // System.out.println(" "+prevSym);
+        val+=symval[prevSym];
         return val;
     }
 }
